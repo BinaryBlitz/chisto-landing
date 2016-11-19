@@ -37,6 +37,13 @@ header {
 
         a {
           color: $text-color-primary;
+
+          &:hover {
+            text-decoration: none;
+            padding-bottom: 3px;
+            border-bottom: 3px solid $primary-color;
+            color: $primary-color;
+          }
         }
       }
     }
