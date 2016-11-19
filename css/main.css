@@ -39,33 +39,44 @@ main {
   padding: 1rem 0;
 }
 
-main h2, main h4 {
+main h1, main h2, main h3, main h4 {
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
 }
 
+main h1 {
+  font-size: 1.8em;
+}
+
 main h2 {
   font-size: 1.6em;
+}
+
+main h3 {
+  font-size: 1.4em;
+}
+
+#main h1, #main h2 {
   margin-bottom: 2rem;
 }
 
-main h4 {
+#main h4 {
   color: #3fbaf7;
   margin-bottom: 1.5rem;
 }
 
-main #description {
+#main #description {
   padding-top: 1rem;
   padding-right: 3rem;
 }
 
-main #steps {
+#main #steps {
   padding-left: 2.5em;
   list-style: none;
 }
 
-main #steps li {
+#main #steps li {
   counter-increment: step-counter;
   float: left;
   position: relative;
@@ -74,7 +85,7 @@ main #steps li {
   margin-right: 1rem;
 }
 
-main #steps li::before {
+#main #steps li::before {
   content: counter(step-counter);
   position: absolute;
   left: -2.5em;
@@ -89,8 +100,47 @@ main #steps li::before {
   line-height: 1.5em;
 }
 
-main #screenshot {
+#main #screenshot {
   text-align: center;
+}
+
+#about h2 {
+  margin-bottom: 2rem;
+}
+
+#about .about-item {
+  margin-bottom: 2rem;
+  color: rgba(0, 0, 0, 0.7);
+  padding-right: 2rem;
+  line-height: 1.6;
+}
+
+#about .about-item img {
+  margin-bottom: 0.75rem;
+}
+
+#partner h2 {
+  margin-bottom: 1.5rem;
+}
+
+#partner h3 {
+  font-size: 1.35em;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+}
+
+#partner #form {
+  margin-bottom: 2rem;
+}
+
+#partner #form #submit-button {
+  margin-top: 1rem;
+}
+
+#partner #form #submit-button .btn-primary {
+  background-color: #3fbaf7;
+  border-color: #3fbaf7;
 }
 
 footer {
@@ -110,11 +160,27 @@ footer .container .row > div:not(:last-child) {
 footer h5 {
   font-weight: 300;
   font-size: 1.3em;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 footer #contact ul li {
   margin-bottom: 0.4rem;
+}
+
+footer #contact ul li.phone-number::before {
+  content: url("../img/icon-phone-footer.png");
+  padding-right: 1em;
+  vertical-align: text-top;
+}
+
+footer #contact ul li.email::before {
+  content: url("../img/icon-mail-footer.png");
+  padding-right: 1em;
+  vertical-align: text-top;
+}
+
+footer #contact ul li a {
+  color: white;
 }
 
 footer #contact ul #social li {
@@ -176,6 +242,12 @@ footer #legal ul li a:hover {
     padding-top: 1rem;
     padding-right: 3rem;
   }
+  #about h2 {
+    margin-bottom: 3.5rem;
+  }
+  #about .about-item {
+    padding-right: 2rem;
+  }
   footer {
     padding-top: 2.5rem;
   }
@@ -206,5 +278,8 @@ footer #legal ul li a:hover {
   main #description {
     padding-top: 3.5rem;
     padding-right: 3rem;
+  }
+  #about .about-item {
+    padding-right: 4rem;
   }
 }

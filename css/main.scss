@@ -10,6 +10,7 @@ $text-color-muted: rgba(0, 0, 0, 0.7);
 
 $white-color: rgba(255, 255, 255, 0.9);
 $white-color-muted: rgba(255, 255, 255, 0.75);
+
 $gray-color: rgba(255, 255, 255, 0.25);
 $light-gray: rgba(0, 0, 0, 0.2);
 
@@ -53,14 +54,27 @@ header {
 main {
   padding: 1rem 0;
 
-  h2, h4 {
+  h1, h2, h3, h4 {
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
   }
 
+  h1 {
+    font-size: 1.8em;
+  }
+
   h2 {
     font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+}
+
+#main {
+  h1, h2 {
     margin-bottom: 2rem;
   }
 
@@ -105,7 +119,6 @@ main {
         border: 1px solid $light-gray;
         border-radius: 50%;
 
-        // font-size: 1em;
         line-height: 1.5em;
       }
     }
@@ -113,6 +126,49 @@ main {
 
   #screenshot {
     text-align: center;
+  }
+}
+
+#about {
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  .about-item {
+    margin-bottom: 2rem;
+    color: $text-color-muted;
+    padding-right: 2rem;
+    line-height: 1.6;
+
+    img {
+      margin-bottom: 0.75rem;
+    }
+  }
+}
+
+#partner {
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.35em;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+  }
+
+  #form {
+    margin-bottom: 2rem;
+
+    #submit-button {
+      margin-top: 1rem;
+
+      .btn-primary {
+        background-color: $primary-color;
+        border-color: $primary-color;
+      }
+    }
   }
 }
 
@@ -132,13 +188,33 @@ footer {
   h5 {
     font-weight: 300;
     font-size: 1.3em;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
   }
 
   #contact {
     ul {
       li {
         margin-bottom: 0.4rem;
+
+        &.phone-number {
+          &::before {
+            content: url('../img/icon-phone-footer.png');
+            padding-right: 1em;
+            vertical-align: text-top;
+          }
+        }
+
+        &.email {
+          &::before {
+            content: url('../img/icon-mail-footer.png');
+            padding-right: 1em;
+            vertical-align: text-top;
+          }
+        }
+
+        a {
+          color: white;
+        }
       }
 
       #social {
@@ -227,6 +303,16 @@ footer {
     }
   }
 
+  #about {
+    h2 {
+      margin-bottom: 3.5rem;
+    }
+
+    .about-item {
+      padding-right: 2rem;
+    }
+  }
+
   footer {
     padding-top: 2.5rem;
 
@@ -267,6 +353,12 @@ footer {
     #description {
       padding-top: 3.5rem;
       padding-right: 3rem;
+    }
+  }
+
+  #about {
+    .about-item {
+      padding-right: 4rem;
     }
   }
 }
