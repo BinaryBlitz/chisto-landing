@@ -138,8 +138,38 @@ main h3 {
   margin-top: 1rem;
 }
 
-#partner #form #submit-button .btn-primary {
-  background-color: #3fbaf7;
+#partner #form #submit-button .btn-outline-primary {
+  color: #3fbaf7;
+  border-color: #3fbaf7;
+}
+
+#contact #contact-info ul {
+  margin-top: 2rem;
+}
+
+#contact #contact-info ul li {
+  margin-bottom: 1rem;
+}
+
+#contact #contact-info ul li img {
+  margin-right: 0.75rem;
+}
+
+#contact #contact-form {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#contact #contact-form h2 {
+  margin-bottom: 1rem;
+}
+
+#contact #contact-form #submit-button {
+  margin-top: 1rem;
+}
+
+#contact #contact-form #submit-button .btn-outline-primary {
+  color: #3fbaf7;
   border-color: #3fbaf7;
 }
 
