@@ -1,5 +1,5 @@
 #main {
-  h1, h2 {
+  h2 {
     margin-bottom: 2rem;
   }
 
@@ -10,7 +10,7 @@
 
   #description {
     padding-top: 1rem;
-    padding-right: 3rem;
+    padding-right: 2rem;
   }
 
   #steps {
@@ -51,5 +51,9 @@
 
   #screenshot {
     text-align: center;
+
+    img {
+      max-width: 290px;
+    }
   }
 }

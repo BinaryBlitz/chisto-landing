@@ -70,6 +70,7 @@ footer {
   font-size: 0.8em;
   font-weight: 200;
 
+  // Separators between sections
   .container .row > div:not(:last-child) {
     border-bottom: 0.5px solid $gray-color;
     margin-bottom: 1rem;
@@ -82,7 +83,11 @@ footer {
     margin-bottom: 1rem;
   }
 
-  #contact {
+  a {
+    color: white;
+  }
+
+  #footer-contact {
     ul {
       li {
         margin-bottom: 0.4rem;
@@ -101,10 +106,6 @@ footer {
             padding-right: 1em;
             vertical-align: text-top;
           }
-        }
-
-        a {
-          color: white;
         }
       }
 
@@ -127,6 +128,10 @@ footer {
   #download {
     ul li {
       margin-bottom: 0.75rem;
+
+      img {
+        // max-width: 100px;
+      }
     }
   }
 

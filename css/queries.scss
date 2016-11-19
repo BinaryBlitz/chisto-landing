@@ -21,7 +21,8 @@
 // Medium
 @media (min-width: 768px) {
   header {
-    padding: 3rem 0 2rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 
     nav ul {
       &:first-child {
@@ -32,9 +33,15 @@
 
   main {
     padding-bottom: 0;
+  }
+
+  #main {
+    h2 {
+      margin-bottom: 2.5rem;
+    }
 
     #description {
-      padding-top: 1rem;
+      padding-top: 1.5rem;
       padding-right: 3rem;
     }
   }
@@ -81,7 +88,7 @@
     padding: 3rem 0 3rem;
   }
 
-  main {
+  #main {
     h2 {
       margin-bottom: 2.5rem;
     }

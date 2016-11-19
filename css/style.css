@@ -1,4 +1,4 @@
-#main h1, #main h2 {
+#main h2 {
   margin-bottom: 2rem;
 }
 
@@ -9,7 +9,7 @@
 
 #main #description {
   padding-top: 1rem;
-  padding-right: 3rem;
+  padding-right: 2rem;
 }
 
 #main #steps {
@@ -45,8 +45,12 @@
   text-align: center;
 }
 
+#main #screenshot img {
+  max-width: 290px;
+}
+
 #about h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 #about .about-item {
@@ -193,27 +197,27 @@ footer h5 {
   margin-bottom: 1rem;
 }
 
-footer #contact ul li {
+footer a {
+  color: white;
+}
+
+footer #footer-contact ul li {
   margin-bottom: 0.4rem;
 }
 
-footer #contact ul li.phone-number::before {
+footer #footer-contact ul li.phone-number::before {
   content: url("../img/icon-phone-footer.png");
   padding-right: 1em;
   vertical-align: text-top;
 }
 
-footer #contact ul li.email::before {
+footer #footer-contact ul li.email::before {
   content: url("../img/icon-mail-footer.png");
   padding-right: 1em;
   vertical-align: text-top;
 }
 
-footer #contact ul li a {
-  color: white;
-}
-
-footer #contact ul #social li {
+footer #footer-contact ul #social li {
   margin-right: 1rem;
 }
 
@@ -260,7 +264,8 @@ footer #legal ul li a:hover {
 
 @media (min-width: 768px) {
   header {
-    padding: 3rem 0 2rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
   }
   header nav ul:first-child {
     margin-left: 1.25rem;
@@ -268,8 +273,11 @@ footer #legal ul li a:hover {
   main {
     padding-bottom: 0;
   }
-  main #description {
-    padding-top: 1rem;
+  #main h2 {
+    margin-bottom: 2.5rem;
+  }
+  #main #description {
+    padding-top: 1.5rem;
     padding-right: 3rem;
   }
   #about h2 {
@@ -302,10 +310,10 @@ footer #legal ul li a:hover {
   header {
     padding: 3rem 0 3rem;
   }
-  main h2 {
+  #main h2 {
     margin-bottom: 2.5rem;
   }
-  main #description {
+  #main #description {
     padding-top: 3.5rem;
     padding-right: 3rem;
   }
