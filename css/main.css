@@ -3,15 +3,16 @@ body {
 }
 
 header {
-  padding: 3rem 0;
+  padding-top: 2rem;
 }
 
 header nav {
   vertical-align: middle;
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
 }
 
 header nav ul {
+  margin-top: 1.5rem;
   margin-bottom: 0;
 }
 
@@ -19,12 +20,16 @@ header nav ul li {
   margin-left: 1rem;
 }
 
+header nav ul li:first-child {
+  margin-left: 0;
+}
+
 header nav ul li a {
   color: rgba(0, 0, 0, 0.5);
 }
 
 main {
-  margin-top: 1.5rem;
+  padding: 1rem 0;
 }
 
 main h2, main h4 {
@@ -35,7 +40,7 @@ main h2, main h4 {
 
 main h2 {
   font-size: 1.6em;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 main h4 {
@@ -44,7 +49,7 @@ main h4 {
 }
 
 main #description {
-  padding-top: 3.5rem;
+  padding-top: 1rem;
   padding-right: 3rem;
 }
 
@@ -58,7 +63,7 @@ main #steps li {
   float: left;
   position: relative;
   color: rgba(0, 0, 0, 0.7);
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   margin-right: 1rem;
 }
 
@@ -77,21 +82,22 @@ main #steps li::before {
   line-height: 1.5em;
 }
 
+main #screenshot {
+  text-align: center;
+}
+
 footer {
   background-color: #3fbaf7;
   color: white;
-  padding-top: 2.5rem;
-  padding-bottom: 1.5rem;
+  padding: 1.5rem 0;
   font-size: 0.8em;
   font-weight: 200;
 }
 
 footer .container .row > div:not(:last-child) {
-  border-right: 0.5px solid rgba(255, 255, 255, 0.25);
-}
-
-footer .container .row > div:not(:first-child) {
-  padding-left: 2.5rem;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 footer h5 {
@@ -128,63 +134,68 @@ footer #legal a {
 
 footer #legal ul {
   display: inline-block;
+  margin-top: 0.5rem;
   margin-bottom: 0;
-}
-
-footer #legal ul li {
-  margin-left: 0.75rem;
 }
 
 footer #legal ul li a:hover {
   color: white;
 }
 
-@media (max-width: 543px) {
-  header {
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
-  }
+@media (min-width: 544px) {
   header nav ul {
-    margin-top: 1.5rem;
-  }
-  header nav ul li:first-child {
-    margin-left: 0;
-  }
-  main {
     margin-top: 0;
   }
   main h2 {
-    font-size: 1.4em;
-    margin-bottom: 1rem;
-  }
-  main #description {
-    padding-top: 1rem;
-    padding-right: 2rem;
-  }
-}
-
-@media (min-width: 544px) {
-  header {
-    padding-bottom: 2rem;
-  }
-  main h2 {
     font-size: 1.5em;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   main #description {
-    padding-top: 1rem;
     padding-right: 2rem;
   }
 }
 
 @media (min-width: 768px) {
+  header {
+    padding: 3rem 0 2rem;
+  }
+  header nav ul:first-child {
+    margin-left: 1.25rem;
+  }
+  main {
+    padding-bottom: 0;
+  }
   main #description {
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-right: 3rem;
+  }
+  footer {
+    padding-top: 2.5rem;
+  }
+  footer .container .row > div:not(:last-child) {
+    border-right: 0.5px solid rgba(255, 255, 255, 0.25);
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  footer .container .row > div:not(:first-child) {
+    padding-left: 2.5rem;
+  }
+  footer #legal ul {
+    margin-top: 0;
+  }
+  footer #legal ul li {
+    margin-left: 0.75rem;
   }
 }
 
 @media (min-width: 992px) {
+  header {
+    padding: 3rem 0 3rem;
+  }
+  main h2 {
+    margin-bottom: 2.5rem;
+  }
   main #description {
     padding-top: 3.5rem;
     padding-right: 3rem;
