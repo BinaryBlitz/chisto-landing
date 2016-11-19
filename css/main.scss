@@ -358,7 +358,7 @@ footer {
     }
 
     .container .row > div:not(:first-child) {
-      padding-left: 2.5rem;
+      padding-left: 1.5rem;
     }
 
     #legal {
@@ -393,6 +393,12 @@ footer {
   #about {
     .about-item {
       padding-right: 4rem;
+    }
+  }
+
+  footer {
+    .container .row > div:not(:first-child) {
+      padding-left: 1.5rem;
     }
   }
 }

@@ -288,7 +288,7 @@ footer #legal ul li a:hover {
     padding-bottom: 0;
   }
   footer .container .row > div:not(:first-child) {
-    padding-left: 2.5rem;
+    padding-left: 1.5rem;
   }
   footer #legal ul {
     margin-top: 0;
@@ -311,5 +311,8 @@ footer #legal ul li a:hover {
   }
   #about .about-item {
     padding-right: 4rem;
+  }
+  footer .container .row > div:not(:first-child) {
+    padding-left: 1.5rem;
   }
 }
