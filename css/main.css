@@ -1,0 +1,115 @@
+body {
+  background-color: #f6f6f6;
+}
+
+header {
+  padding: 3rem 0;
+}
+
+header nav {
+  vertical-align: middle;
+  margin: 0.5rem 0;
+}
+
+header nav ul {
+  margin-bottom: 0;
+}
+
+header nav ul li {
+  margin-left: 1rem;
+}
+
+header nav ul li a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+main {
+  margin-top: 1.5rem;
+}
+
+main h2, main h4 {
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+
+main h2 {
+  font-size: 1.6em;
+  margin-bottom: 2.5rem;
+}
+
+main h4 {
+  color: #3fbaf7;
+  margin-bottom: 1.25rem;
+}
+
+main ol {
+  padding-left: 1.25rem;
+}
+
+main ol li {
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 1.25rem;
+}
+
+footer {
+  background-color: #3fbaf7;
+  color: white;
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+footer .container .row > div:not(:last-child) {
+  border-right: 0.5px solid rgba(255, 255, 255, 0.25);
+}
+
+footer .container .row > div:not(:first-child) {
+  padding-left: 2.5rem;
+}
+
+footer h5 {
+  font-weight: 300;
+  font-size: 1.3em;
+  margin-bottom: 0.8rem;
+}
+
+footer #contact ul li {
+  margin-bottom: 0.4rem;
+}
+
+footer #contact ul #social li {
+  margin-right: 1rem;
+}
+
+footer #payments #processing li {
+  margin-right: 1rem;
+}
+
+footer #download ul li {
+  margin-bottom: 0.75rem;
+}
+
+footer #legal {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9em;
+  margin-top: 1.5rem;
+}
+
+footer #legal a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+footer #legal ul {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+footer #legal ul li {
+  margin-left: 0.75rem;
+}
+
+footer #legal ul li a:hover {
+  color: white;
+}
