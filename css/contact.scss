@@ -1,0 +1,33 @@
+#contact {
+  #contact-info {
+    ul {
+      margin-top: 2rem;
+
+      li {
+        margin-bottom: 1rem;
+
+        img {
+          margin-right: 0.75rem;
+        }
+      }
+    }
+  }
+
+  #contact-form {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    #submit-button {
+      margin-top: 1rem;
+
+      .btn-outline-primary {
+        color: $primary-color;
+        border-color: $primary-color;
+      }
+    }
+  }
+}
